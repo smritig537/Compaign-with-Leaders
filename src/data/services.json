@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "party-registration",
+    "title": "Political Party Registration",
+    "excerpt": "Register a political party with the Election Commission of India with end-to-end documentation and representation.",
+    "content": "We handle the entire registration process with the Election Commission of India, including paperwork, compliance, and liaison."
+  },
+  {
+    "slug": "election-campaign-management",
+    "title": "Election Campaign Management",
+    "excerpt": "End-to-end election campaign planning — from messaging to ground mobilisation.",
+    "content": "Our team provides campaign strategy, voter outreach, digital communication and ground coordination for electoral success."
+  },
+  {
+    "slug": "fund-management",
+    "title": "Fund Management Consulting",
+    "excerpt": "Advisory on fundraising, audit-compliant accounting and donor management.",
+    "content": "Financial controls, fundraising guidance and transparent bookkeeping for political organizations and NGOs."
+  },
+  {
+    "slug": "ngo-registration",
+    "title": "NGO / Niti Aayog Registration",
+    "excerpt": "Assistance with NGO registration, Niti Aayog registration and compliance.",
+    "content": "We help you set up your NGO/Foundation and get the necessary approvals including Niti Aayog registration."
+  },
+  {
+    "slug": "shop-establishment",
+    "title": "Shop & Establishment Registration",
+    "excerpt": "Shop and establishment registration, licensing & compliance.",
+    "content": "Get your business registered under the Shops and Establishment Act and maintain statutory compliance."
+  }
+]
