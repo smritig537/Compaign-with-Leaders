@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import logo from "../assets/logo.png";
 import "../protocol.css";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header 
       className="navbar"
@@ -17,7 +20,7 @@ export default function Navbar() {
       }}
     >
       <div 
-        className="container" 
+        className="container"
         style={{
           maxWidth: "1250px",
           margin: "0 auto",
@@ -28,7 +31,7 @@ export default function Navbar() {
         }}
       >
 
-        {/* Logo + brand */}
+        {/* Logo + Brand */}
         <Link 
           to="/" 
           style={{ 
@@ -50,9 +53,7 @@ export default function Navbar() {
               boxShadow: "0 2px 6px rgba(0,0,0,0.15)"
             }}
           />
-
           <span 
-            className="brand" 
             style={{
               fontSize: "20px",
               fontWeight: "600",
@@ -64,63 +65,33 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Menu */}
-        <nav>
-          <ul 
-            className="nav-menu"
-            style={{
-              listStyle: "none",
-              display: "flex",
-              gap: "28px",
-              margin: 0,
-              padding: 0,
-              alignItems: "center"
-            }}
-          >
+        {/* Hamburger icon (Mobile only) */}
+        <div 
+          className="menu-toggle"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          ☰
+        </div>
+
+        {/* Navigation Menu */}
+        <nav className={isOpen ? "nav-menu open" : "nav-menu"}>
+          <ul>
             {[
               {label: "Home", path: "/"},
-               {label: "About Us", path:"/about"},
+              {label: "About Us", path:"/about"},
               {label: "Services", path: "/services"},
               {label: "Gallery", path: "/gallery"},
               {label: "Why Choose Us", path: "/whychooseus"},
               {label: "Blog", path: "/blog"},  
-              {label:"Vission/Mission", path:"/vission"}
+              {label: "Vission/Mission", path:"/vission"},
             ].map((item) => (
-              <li key={item.label}>
-                <Link 
-                  to={item.path}
-                  style={{
-                    textDecoration: "none",
-                    fontSize: "16px",
-                    color: "#333",
-                    fontWeight: "500",
-                    transition: "0.3s"
-                  }}
-                  onMouseEnter={(e) => (e.target.style.color = "#007bff")}
-                  onMouseLeave={(e) => (e.target.style.color = "#333")}
-                >
-                  {item.label}
-                </Link>
+              <li key={item.label} onClick={() => setIsOpen(false)}>
+                <Link to={item.path}>{item.label}</Link>
               </li>
             ))}
 
-            <li>
-              <Link 
-                to="/contact"
-                style={{
-                  background: "#007bff",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "6px",
-                  textDecoration: "none",
-                  fontWeight: "500",
-                  transition: "0.3s"
-                }}
-                onMouseEnter={(e) => (e.target.style.background = "#0056d2")}
-                onMouseLeave={(e) => (e.target.style.background = "#007bff")}
-              >
-                Contact
-              </Link>
+            <li onClick={() => setIsOpen(false)}>
+              <Link className="contact-btn" to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>

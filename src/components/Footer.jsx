@@ -1,41 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import "./protocol.css";
 
 export default function Footer() {
   return (
-    <footer
-      style={{
-        background: "linear-gradient(90deg,#FF9933,#FFFFFF,#138808)",
-        padding: "50px 20px",
-        marginTop: "auto",
-      }}
-    >
-      <div
-        className="container"
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          display: "flex",
-          gap: "40px",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-        }}
-      >
-        <div style={{ maxWidth: "360px", color: "#222" }}>
-          <img
-            src={logo}
-            alt="Protocol Expert logo"
-            style={{
-              width: "80px",
-              height: "60px",
-              objectFit: "cover",
-              borderRadius: "50%",
-              border: "2px solid #fff",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
-              marginBottom: "12px",
-            }}
-          />
+    <footer className="footer">
+      <div className="footer-container">
+
+        <div className="footer-section">
+          <img src={logo} alt="Protocol Expert logo" className="footer-logo" />
 
           <p>
             Campaign With Leaders provides consultancy for political parties,
@@ -46,9 +20,9 @@ export default function Footer() {
           <p>📩 campaignwithleaders@gmail.com</p>
         </div>
 
-        <div>
-          <h4 style={{ fontWeight: "700", marginBottom: "10px" }}>Quick Links</h4>
-          <ul style={{ listStyle: "none", padding: 0, lineHeight: "1.9" }}>
+        <div className="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/gallery">Gallery</Link></li>
@@ -56,13 +30,14 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
-          <h4 style={{ fontWeight: "700", marginBottom: "10px" }}>Address</h4>
+        <div className="footer-section">
+          <h4>Address</h4>
           <p>Delhi, India-110001</p>
         </div>
+
       </div>
 
-      <p style={{ textAlign: "center", marginTop: "30px", fontWeight: "600" }}>
+      <p className="footer-bottom">
         © 2025 Campaign With Leaders. All Rights Reserved 🇮🇳
       </p>
     </footer>
