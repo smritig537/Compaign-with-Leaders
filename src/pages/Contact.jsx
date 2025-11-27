@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/contact.css";
 export default function Contact() {
   return (
     <section
@@ -38,13 +38,9 @@ export default function Contact() {
           }}
         ></div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 380px",
-            gap: "40px",
-          }}
-        >
+   <div className="contact-grid" style={{ gap: "40px" }}>
+
+
           {/* Contact Form */}
           <div
             style={{
