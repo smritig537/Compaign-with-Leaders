@@ -1,0 +1,88 @@
+.services-section {
+  padding: 130px 24px;
+  background: linear-gradient(135deg, #ffefe3 0%, #ffffff 50%, #e6f7eb 100%);
+  position: relative;
+}
+
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg");
+  opacity: 0.04;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.services-title {
+  font-size: 46px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ff671f, #000, #046a38);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.services-line {
+  width: 180px;
+  height: 6px;
+  margin: 16px auto 40px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #ff671f, #ffffff, #046a38);
+}
+
+.services-subtext {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.7;
+  margin-bottom: 70px;
+}
+
+/* Grid layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 35px;
+}
+
+/* Service card UI */
+.service-card {
+  padding: 34px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: 0.35s;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  color: #111;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}

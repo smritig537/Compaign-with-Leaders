@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../assets/placeholder.jpg";
-import img2 from "../assets/placeholder.jpg";
-import img3 from "../assets/placeholder.jpg";
-import img4 from "../assets/placeholder.jpg";
+// import img1 from "../assets/placeholder.jpg";
+// import img2 from "../assets/placeholder.jpg";
+// import img3 from "../assets/placeholder.jpg";
+// import img4 from "../assets/placeholder.jpg";
 
-const images = [img1, img2, img3, img4];
+// const images = [img1, img2, img3, img4];
 
 export default function Gallery() {
   return (
@@ -19,7 +19,7 @@ export default function Gallery() {
             gap: 16,
           }}
         >
-          {images.map((src, i) => (
+          {/* {images.map((src, i) => (
             <div
               key={i}
               style={{
@@ -30,7 +30,7 @@ export default function Gallery() {
             >
               <img src={src} alt={`gallery-${i}`} style={{ width: "100%" }} />
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/political Logo.jpeg";
+import logo from "../assets/logo.png";
 import "../protocol.css";
 
 export default function Navbar() {
@@ -42,8 +42,8 @@ export default function Navbar() {
             src={logo} 
             alt="Protocol Expert logo"
             style={{
-              width: "52px",
-              height: "52px",
+              width: "80px",
+              height: "60px",
               objectFit: "cover",
               borderRadius: "50%",
               border: "2px solid #ddd",
@@ -77,10 +77,18 @@ export default function Navbar() {
               alignItems: "center"
             }}
           >
-            {["Home", "Services", "Gallery", "Blog"].map((item) => (
-              <li key={item}>
+            {[
+              {label: "Home", path: "/"},
+               {label: "About Us", path:"/about"},
+              {label: "Services", path: "/services"},
+              {label: "Gallery", path: "/gallery"},
+              {label: "Why Choose Us", path: "/whychooseus"},
+              {label: "Blog", path: "/blog"},  
+              {label:"Vission/Mission", path:"/vission"}
+            ].map((item) => (
+              <li key={item.label}>
                 <Link 
-                  to={`/${item.toLowerCase()}`}
+                  to={item.path}
                   style={{
                     textDecoration: "none",
                     fontSize: "16px",
@@ -91,7 +99,7 @@ export default function Navbar() {
                   onMouseEnter={(e) => (e.target.style.color = "#007bff")}
                   onMouseLeave={(e) => (e.target.style.color = "#333")}
                 >
-                  {item}
+                  {item.label}
                 </Link>
               </li>
             ))}

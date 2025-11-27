@@ -1,0 +1,96 @@
+.vm-section {
+  padding: 130px 24px;
+  background: linear-gradient(135deg, #ffefe3 0%, #ffffff 50%, #e6f7eb 100%);
+  position: relative;
+}
+
+/* Subtle flag waves background */
+.vm-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg");
+  opacity: 0.04;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+}
+
+.vm-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.vm-title {
+  font-size: 46px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ff671f, #000, #046a38);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.vm-line {
+  width: 180px;
+  height: 6px;
+  margin: 16px auto 40px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #ff671f, #ffffff, #046a38);
+}
+
+.vm-subtext {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.8;
+  margin-bottom: 60px;
+}
+
+/* Card layout */
+.vm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 35px;
+}
+
+.vm-box {
+  padding: 40px 32px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.vm-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+
+.vm-box h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.vm-box p {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.vm-quote {
+  margin-top: 55px;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff671f, #046a38);
+  -webkit-background-clip: text;
+  color: transparent;
+}

@@ -1,13 +1,12 @@
 import React from "react";
 
-export default function About() {
+export default function Why() {
   return (
     <section
       style={{
         padding: "90px 20px",
         minHeight: "100vh",
-        background:
-          "linear-gradient(135deg, rgba(255,153,51,0.18) 0%, rgba(255,255,255,0.9) 50%, rgba(19,136,8,0.18) 100%)",
+        background: "linear-gradient(135deg, rgba(255,153,51,0.18) 0%, rgba(255,255,255,0.9) 50%, rgba(19,136,8,0.18) 100%)",
       }}
     >
       <div
@@ -17,7 +16,7 @@ export default function About() {
           textAlign: "center",
         }}
       >
-        {/* Title */}
+        {/* Title with tricolor underline */}
         <h2
           style={{
             fontSize: "40px",
@@ -27,12 +26,12 @@ export default function About() {
             textTransform: "uppercase",
           }}
         >
-          About Protocol Expert
+          Why Choose Us
         </h2>
 
         <div
           style={{
-            width: "160px",
+            width: "140px",
             height: "6px",
             margin: "0 auto 35px",
             borderRadius: "6px",
@@ -45,18 +44,18 @@ export default function About() {
           style={{
             fontSize: "20px",
             color: "#333",
-            maxWidth: "850px",
-            margin: "0 auto 55px",
+            maxWidth: "780px",
+            margin: "0 auto 60px",
             lineHeight: "1.7",
             fontWeight: "500",
           }}
         >
-          Protocol Expert is a national consultancy delivering structured support in political
-          registrations, NGO compliance, campaign strategy and financial–legal advisory. We enable
-          leaders, organizations and institutions to operate with governance, credibility and impact.
+          We empower leaders, organizations, and social change movements with
+          strategy, technology and public engagement. Our expertise helps build
+          strong influence and deliver impactful results.
         </p>
 
-        {/* Cards */}
+        {/* Feature Cards */}
         <div
           style={{
             display: "grid",
@@ -66,16 +65,20 @@ export default function About() {
         >
           {[
             {
-              title: "Our Expertise",
-              desc: "We work with political leaders, public representatives, NGOs and corporates across India, offering legally aligned and operational solutions.",
+              title: "Proven Experience",
+              desc: "Expertise in public relations, campaign management & digital engagement.",
             },
             {
-              title: "Strategic Approach",
-              desc: "Focused on transparency, accuracy and professional execution for sustainable, result-driven success.",
+              title: "Results That Matter",
+              desc: "Strategic planning with measurable outcomes that drive real success.",
             },
             {
-              title: "End-to-End Support",
-              desc: "From documentation and compliance to campaign planning and public outreach — complete 360° support.",
+              title: "Creative & Modern Strategy",
+              desc: "Brand storytelling, digital intelligence, and innovative execution.",
+            },
+            {
+              title: "Trusted Across India",
+              desc: "Strong connections & trust built through successful leadership projects.",
             },
           ].map((item) => (
             <div
@@ -118,17 +121,6 @@ export default function About() {
             </div>
           ))}
         </div>
-
-        <p
-          style={{
-            marginTop: "50px",
-            fontWeight: "700",
-            fontSize: "20px",
-            color: "#111",
-          }}
-        >
-          Protocol Expert — Empowering Leadership & Nation-Building With Excellence 🇮🇳
-        </p>
       </div>
     </section>
   );
