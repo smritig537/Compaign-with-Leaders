@@ -1,33 +1,37 @@
-import React from 'react'
-import { useParams, Link } from 'react-router-dom'
-import services from '../data/services.json'
+import React from "react";
+import { useParams, Link } from "react-router-dom";
+import services from "../data/services.json";
+import "../styles/serviceDetail.css";
 
-export default function ServiceDetail(){
-  const { slug } = useParams()
-  const service = services.find(s => s.slug === slug)
+export default function ServiceDetail() {
+  const { slug } = useParams();
+  const service = services.find((s) => s.slug === slug);
 
-  if(!service){
+  if (!service) {
     return (
-      <section className="section">
-        <div className="container">
-          <h2>Service not found</h2>
+      <section className="service-detail-section">
+        <div className="service-detail-container">
+          <h2 className="service-title">Service Not Found</h2>
           <p>We couldn't find that service.</p>
-          <Link to="/services" className="btn">Back to services</Link>
+          <Link to="/services" className="service-btn">Back to Services</Link>
         </div>
       </section>
-    )
+    );
   }
 
   return (
-    <section className="section">
-      <div className="container">
-        <h2 className="section-title">{service.title}</h2>
-        <p style={{maxWidth:900, marginBottom:18}}>{service.content}</p>
+    <section className="service-detail-section">
+      <div className="service-detail-container card">
+        <h2 className="service-title">{service.title}</h2>
 
-        <div style={{marginTop:20}}>
-          <Link to="/contact" className="btn">Contact Us about this service</Link>
-        </div>
+        <p className="service-content">
+          {service.content}
+        </p>
+
+        <Link to="/contact" className="service-btn">
+          Contact Us About This Service
+        </Link>
       </div>
     </section>
-  )
+  );
 }
