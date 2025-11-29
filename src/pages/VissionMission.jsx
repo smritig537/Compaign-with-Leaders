@@ -31,7 +31,7 @@ export default function VisionMission() {
           </div>
         </div>
 
-        <p className="vm-quote">Empowering Leadership. Inspiring Change. 🇮🇳</p>
+        <p className="vm-quote">🇮🇳 “Empower. परिवर्तन. Victory.” 🇮🇳</p>
       </div>
     </section>
   );

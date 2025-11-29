@@ -27,7 +27,7 @@ export default function About() {
             textTransform: "uppercase",
           }}
         >
-          About Protocol Expert
+          🇮🇳 Campaign  With  Leaders 🇮🇳 
         </h2>
 
         <div
@@ -51,9 +51,13 @@ export default function About() {
             fontWeight: "500",
           }}
         >
-          Protocol Expert is a national consultancy delivering structured support in political
-          registrations, NGO compliance, campaign strategy and financial–legal advisory. We enable
-          leaders, organizations and institutions to operate with governance, credibility and impact.
+          Campaign With Leaders is a national political consultancy specializing in election campaign management, political strategy, public leadership development, and legal–organizational advisory. We support leaders, candidates, NGOs, and institutions with structured, research-driven and technology-enabled solutions to build credibility, strengthen public engagement, and drive impactful results.
+
+Our expertise spans campaign planning, voter data analytics, war-room operations, digital media, PR & communication, personal branding, reputation management, governance advisory, and compliance services including NGO formation, ECI registrations, financial certifications and policy support.
+
+With experienced strategists, media specialists, legal advisors, and on-ground teams, we deliver end-to-end guidance—from booth-level execution to national campaign strategy—empowering leaders to win trust, influence communities and lead with vision.
+
+We build campaigns with purpose—powered by research, communication, and leadership.
         </p>
 
         {/* Cards */}
@@ -127,7 +131,7 @@ export default function About() {
             color: "#111",
           }}
         >
-          Protocol Expert — Empowering Leadership & Nation-Building With Excellence 🇮🇳
+          🇮🇳 “Empower. परिवर्तन. Victory.” 🇮🇳  
         </p>
       </div>
     </section>

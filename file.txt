@@ -1,0 +1,27 @@
+protocol-expert-vite/
+├─ public/
+│  ├─ robots.txt
+│  ├─ favicon.ico
+│  └─ assets/          # copy images, logos, hero background etc.
+├─ src/
+│  ├─ assets/          # local images used by components
+│  ├─ components/
+│  │  ├─ Navbar.jsx
+│  │  ├─ Footer.jsx
+│  │  ├─ ServiceCard.jsx
+│  │  └─ Gallery.jsx
+│  ├─ pages/
+│  │  ├─ Home.jsx
+│  │  ├─ Services.jsx
+│  │  ├─ ServiceDetail.jsx
+│  │  ├─ Blog.jsx
+│  │  ├─ GalleryPage.jsx
+│  │  └─ Contact.jsx
+│  ├─ data/
+│  │  ├─ services.json
+│  │  └─ posts.json
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css
+├─ package.json
+└─ vite.config.js
